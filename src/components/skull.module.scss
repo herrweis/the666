@@ -1,0 +1,15 @@
+.skull {
+  display: block;
+  width: 80vw;
+  display: flex;
+  flex-flow: wrap;
+
+  span {
+    flex: 1.25%;
+    white-space: pre;
+    letter-spacing: 0;
+    line-height: 1.4;
+    font-family: monospace;
+    font-size: 1.5vw;
+  }
+}
