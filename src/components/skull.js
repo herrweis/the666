@@ -8,29 +8,30 @@ class Skull extends Component {
   constructor(props) {
     super(props);
 
-    this.symbols = ["@", "X", "x", "6", "#", "+"];
+    this.symbols = ["t", "h", "e", "6", "6", "6", "*", "@"];
+    // this.colours = ["white", "green", "blue", "aqua", "yellow", "red"];
     this.symbolsLength = this.symbols.length;
 
     this.state = {
-      // symbol: (this.symbols[Math.floor(Math.random() * this.symbolsLength)])
-      symbol: '6'
+      symbol: (this.symbols[Math.floor(Math.random() * this.symbolsLength)])
+      // symbol: '6'
     }
   }
 
   componentDidMount() {
-    // this.intervalID = setInterval(
-    // 	() => this.toggleSymbol(),
-    // 	500
-    // );
+    this.intervalID = setInterval(
+    	() => this.toggleSymbol(),
+    	200
+    );
   }
 
   componentWillUnmount() {
-    // clearInterval(this.intervalID);
+    clearInterval(this.intervalID);
 	}
 
   toggleSymbol() {
     let currentSymbol = this.state.symbol;
-    let tmpSymbols = this.symbols.filter(function(value){ return value != currentSymbol});
+    let tmpSymbols = this.symbols.filter(function(value){ return value !== currentSymbol});
 
     this.setState({
       symbol: (tmpSymbols[Math.floor(Math.random() * tmpSymbols.length)])
