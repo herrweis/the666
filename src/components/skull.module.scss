@@ -1,16 +1,23 @@
+$pixelSize: calc(10px + (30 - 10) * ((100vw - 200px) / (1698 - 200)));;
+
 .skull {
   display: block;
-  width: 60vw;
-  display: flex;
-  flex-flow: wrap;
+  white-space: pre;
+
+  div {
+    text-align: center;
+  }
 
   span {
-    flex: 1.25%;
+    display: inline-block;
     white-space: pre;
     letter-spacing: 0;
-    line-height: 1.4;
     font-family: monospace;
-    font-size: 1.2vw;
+    font-weight: bold;
+    font-size: $pixelSize;
+    line-height: $pixelSize;
+    width: $pixelSize;
+    height: $pixelSize;
 
     color: aqua;
   }
