@@ -2,6 +2,7 @@ html {
     font-size: 0.625em;
     -webkit-text-size-adjust: 0.625em;
     -ms-text-size-adjust: 0.625em;
+    height: 100%;
 }
 
 body {
@@ -14,5 +15,5 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100%;
 }
