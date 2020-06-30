@@ -29,10 +29,10 @@ class Skull extends Component {
   }
 
   componentDidMount() {
-    // this.intervalID = setInterval(
-    // 	() => this.toggleSymbol(),
-    // 	200
-    // );
+    this.intervalID = setInterval(
+    	() => this.toggleSymbol(),
+    	200
+    );
   }
 
   componentWillUnmount() {
@@ -95,8 +95,8 @@ class Skull extends Component {
       {
         Object.keys(dataLine).map(i => {
           ++this.currentKey;
-          // return <span key={this.currentKey}>{dataLine[i] === 1 ? this.state.symbols[Math.floor(Math.random() * this.state.symbols.length)] : " "}</span>
-          return <span key={this.currentKey}>{dataLine[i] === 1 ? this.getCurrentSymbol() : " "}</span>
+          return <span key={this.currentKey}>{dataLine[i] === 1 ? this.state.symbols[Math.floor(Math.random() * this.state.symbols.length)] : " "}</span>
+          // return <span key={this.currentKey}>{dataLine[i] === 1 ? this.getCurrentSymbol() : " "}</span>
         })
       }
       </div>
