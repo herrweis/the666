@@ -1,4 +1,4 @@
-.song {
+.music {
   font-family: monospace;
   padding: 1.5rem 2.5rem;
 
@@ -8,5 +8,25 @@
 
   p {
     font-size: 1.5rem;
+  }
+
+  a {
+    color: aqua;
+  }
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: 0;
+    font-size: 2.5rem;
+  }
+
+  a {
+    display: inline-block;
+    padding: 1.5rem 0;
   }
 }

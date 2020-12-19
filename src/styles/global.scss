@@ -6,11 +6,12 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   background-color: black;
   color: white;
 
   margin: 0;
-  padding: 0;
+  padding: 0 0 100px 0;
 
   display: flex;
   align-items: center;

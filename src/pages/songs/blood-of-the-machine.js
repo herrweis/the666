@@ -1,11 +1,12 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import MusicProviderLinks from "../../components/musicProviderLinks"
 import styles from "./songs.module.scss"
 
 export default function BloodOfTheMachine() {
 
   return (
-    <div className={styles.song}>
+    <div className={styles.music}>
       <Helmet>
         <meta charSet="utf-8" />
         <title>the666 — Blood Of The Machine Lyrics</title>
@@ -68,6 +69,7 @@ export default function BloodOfTheMachine() {
         <p>Blood!</p>
         <p>Of the machine!</p>
       </div>
+      <MusicProviderLinks spotify='https://open.spotify.com/track/580ZIbi66STESq66ZoJpEC?si=1VU8TzTSRYmMo4WVSc332g' apple='https://music.apple.com/us/album/the666-ep/1523354885'/>
     </div>
   )
 }
